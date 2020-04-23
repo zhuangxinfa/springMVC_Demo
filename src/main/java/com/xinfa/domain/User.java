@@ -4,16 +4,16 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class User implements Serializable {
-    private String uname;
+    private String username;
     private Integer age;
-    private Date date;
+    private String password;
 
-    public String getUname() {
-        return uname;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Integer getAge() {
@@ -24,20 +24,20 @@ public class User implements Serializable {
         this.age = age;
     }
 
-    public Date getDate() {
-        return date;
+    public String getPassword() {
+        return password;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "uname='" + uname + '\'' +
+                "username='" + username + '\'' +
                 ", age=" + age +
-                ", date=" + date +
+                ", password='" + password + '\'' +
                 '}';
     }
 }

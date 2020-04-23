@@ -14,5 +14,6 @@ public class AnnoContorller {
     public String testRequestparam(@RequestParam (name = "nametest") String username){
         System.out.println(username);
         return  "success";
+
     }
 }
